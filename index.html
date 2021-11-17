@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="wrapper">
+    <section class="experience_section">
+        <img class="my_photo" src="img/my-photo.jpg" alt="my photo">
+        <div>
+            <a class="fix_underline" href="https://www.facebook.com/kolesroma">
+                <img class="icon fb-icon" src="img/icons/fb-icon.svg" alt="facebook">
+            </a>
+            <a href="https://www.linkedin.com/in/kolesroma/">
+                <img class="icon" src="img/icons/linkedin-icon.svg" alt="linkedIn">
+            </a>
+        </div>
+        <div class="experience_description">
+            <p class="experience_description_first_text">Senior Python Developer</p>
+            <p>10 years experience</p>
+        </div>
+        <div class="technologies_container">
+            <img class="icon_small js_icon" src="img/icons/js-icon.svg" alt="javascript">
+            <img class="icon_small react_icon" src="img/icons/react-icon.svg" alt="react">
+            <img class="icon_small" src="img/icons/nodejs-icon.svg" alt="node js">
+        </div>
+        <a class="header2 works_link" href="https://github.com/kolesroma">Portfolio</a>
+    </section>
+    <section class="my_info_section">
+        <h2 class="my_name">Привіт, я Рома</h2>
+
+        <h1 class="my_profession">Я роблю
+            сайти
+        </h1>
+
+        <p class="my_location">Живу в Києві</p>
+        <p class="my_work">Працюю віддалено</p>
+
+        <p class="my_small_description">Я людина-оркестр. Самотужки замінюю
+            цілу студію
+        </p>
+
+        <div>
+            <p class="my_skills_title">Вмію:</p>
+
+            <ul class="my_ticks_ul">
+                <li class="my_ticks">Керувати ІТ проектами і командами;</li>
+                <li class="my_ticks">Senior Front End розробник;</li>
+                <li class="my_ticks">Middle Back End розробник;</li>
+                <li class="my_ticks">Можу контролювати якість свого або
+                    вашого проекту, як QA-спеціатіст.
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="project_price_section">
+        <div class="project_price_contacts">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <img class="icon" src="img/icons/viber-icon.svg" alt="viber">
+            </a>
+            <a href="https://t.me/kolro">
+                <img class="icon project_price_contacts_telegram" src="img/icons/telegram-icon.svg" alt="telegram">
+            </a>
+            <a href="tel:+380000000000">
+                <img class="icon" src="img/icons/phone-icon.svg" alt="phone">
+            </a>
+            <p class="project_price_contacts_number">+380 000 00 00 00</p>
+        </div>
+
+        <form action="#" class="project_price_form" id="project_price_form">
+            <h4 class="project_price_form_main_title">Розрахуй вартість проекту</h4>
+            <div class="project_type_container">
+                <label for="project_type" class="project_price_form_field_title">Тип сайту</label>
+                <select name="project_type" id="project_type">
+                    <option value="landing_page">Landing page</option>
+                    <option value="online_store">Online store</option>
+                    <option value="web_application">Web application</option>
+                    <option value="mobile_application">Mobile application</option>
+                </select>
+            </div>
+            <div class="activity_type_container">
+                <h4 class="project_price_form_field_title">Типи робіт</h4>
+                <label><input class="activity_type_container_input" type="checkbox" name="project_management"
+                              id="project_management">Project Management</label>
+                <label><input class="activity_type_container_input" type="checkbox" name="design"
+                              id="design">Design</label>
+                <label><input class="activity_type_container_input" type="checkbox" name="developer" id="developer">Developer</label>
+                <label><input class="activity_type_container_input" type="checkbox" name="qa" id="qa">QA</label>
+            </div>
+            <h4 class="project_price_form_field_title">Вартість</h4>
+            <div class="project_dollar_price_container">
+                <p class="project_price_sum">
+                    <span class="project_price_dollar">$</span>
+                    <span id="project_price_total">0</span>
+                </p>
+            </div>
+            <input class="activity_type_container_button" type="submit" value="Надіслати запит">
+        </form>
+    </section>
+</div>
+
+<div class="modal_bg" id="modal_email">
+    <div class="modal_container">
+        <button class="modal_container_cross_button">
+            <img class="modal_icon_cross" src="img/icons/close-icon.svg" alt="">
+        </button>
+        <img class="modal_icon_letter" src="img/icons/mail-icon.svg" alt="mail_icon">
+        <h4 class="modal_container_title">I will text you in
+            about 1 hour</h4>
+        <form class="modal_container_form" id="modal_email_container" action="#">
+            <div class="modal_container_form_without_button">
+                <label class="modal_container_user_email" for="user_email">Email</label>
+                <input type="email" name="user_email" id="user_email" placeholder="Type your email here">
+                <p class="email_error_text" id="email_error_text">Check your email</p>
+            </div>
+            <input type="submit" value="Send" id="modal_container_button">
+        </form>
+    </div>
+</div>
+
+<div class="modal_bg" id="modal_success">
+    <div class="modal_container modal_container_height">
+        <button class="modal_container_cross_button">
+            <img class="modal_icon_cross" src="img/icons/close-icon.svg" alt="">
+        </button>
+        <p class="modal_container_success_text">Your request was
+            sent to process
+        </p>
+        <img class="modal_icon_tick" src="img/icons/tick-icon.svg" alt="tick">
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,419 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background: #E8F3F4;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 100px 15%;
+    justify-content: space-between;
+}
+
+h1 {
+    color: #333333;
+}
+
+.experience_section {
+    width: 256px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my_photo {
+    height: 256px;
+    width: 256px;
+    margin-bottom: 24px;
+    border-radius: 100%;
+}
+
+.fix_underline {
+    text-decoration: none;
+}
+
+.icon {
+    height: 24px;
+    width: 24px;
+    text-decoration: none;
+}
+
+.icon_small {
+    height: 18px;
+    width: 18px;
+    text-decoration: none;
+}
+
+.fb-icon {
+    margin-right: 12px;
+}
+
+.experience_description {
+    margin-top: 32px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.experience_description_first_text {
+    margin-bottom: 8px;
+}
+
+.technologies_container {
+    margin-bottom: 60px;
+}
+
+.js_icon,
+.react_icon {
+    margin-right: 12px;
+}
+
+.header2 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.works_link {
+    color: #EB5757;
+}
+
+.my_profession {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    color: #333333;
+    white-space: pre-line;
+    margin-bottom: 32px;
+}
+
+.my_name {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    margin-bottom: 32px;
+}
+
+.my_location,
+.my_work {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: #2F80ED;
+    padding: 4px 16px;
+}
+
+.my_work {
+    margin-bottom: 90px;
+    margin-right: 108px;
+}
+
+.my_info_section {
+    width: 400px;
+    margin: 0 24px 0 92px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.my_small_description {
+    white-space: pre-line;
+    color: #4F4F4F;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.my_skills_title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    margin-bottom: 16px;
+}
+
+.my_ticks_ul {
+    list-style: disc;
+    border-color: #2F80ED;
+    padding-left: 18px;
+}
+
+.my_ticks {
+    color: #4F4F4F;
+    padding-bottom: 4px;
+    font-size: 16px;
+    line-height: 24px;
+    white-space: pre-line;
+}
+
+.my_ticks::marker {
+    color: #2F80ED;
+}
+
+/* ---------- */
+/*Project price section*/
+/* ---------- */
+
+.project_price_section {
+    position: relative;
+}
+
+.project_price_contacts {
+    position: absolute;
+    transform: translate(74px, -52px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.project_price_contacts_telegram {
+    margin: 0 16px;
+}
+
+.project_price_contacts_number {
+    margin-left: 28px;
+    color: #333333;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.project_price_form {
+    background: #FFFFFF;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 16px;
+    width: 284px;
+    height: 520px;
+    padding: 40px;
+}
+
+.project_price_form_main_title {
+    text-align: center;
+    color: #2F80ED;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+
+.project_type_container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.project_price_form_field_title {
+    color: #4F4F4F;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+#project_type {
+    background: inherit;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4F4F4F;
+    border: none;
+    /*outline: none;*/
+    padding-bottom: 12px;
+    border-bottom: 1px solid #4F4F4F;
+    transform: translate(-2px);
+}
+
+.activity_type_container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.activity_type_container_input {
+    margin-right: 8px;
+    margin-bottom: 8px;
+    transform: translate(-4px);
+    padding: 0 5px;
+    width: 14px;
+    height: 14px;
+    color: #2F80ED;
+}
+
+div.activity_type_container label {
+    font-size: 16px;
+    line-height: 24px;
+    color: #4F4F4F;
+}
+
+.project_dollar_price_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.project_price_sum {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    margin-bottom: 40px;
+}
+
+.project_price_dollar {
+    padding-right: 8px;
+    color: #2F80ED;
+}
+
+#modal_container_button,
+.activity_type_container_button {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 12px 28px;
+    background: #2F80ED;
+    border-radius: 24px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+/*modal_bg*/
+.modal_bg {
+    background-color: rgba(51, 51, 51, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    opacity: 0;
+    /*transition: opacity 0.3s ease-in-out;*/
+}
+
+.modal_active {
+    pointer-events: all;
+    opacity: 1;
+}
+
+.modal_container_form {
+    display: flex;
+    flex-direction: column;
+    margin: 124px 42px 12px;
+}
+
+.modal_container_form_without_button {
+    display: flex;
+    flex-direction: column;
+    height: 102px;
+}
+
+.modal_container_title {
+    color: #2F80ED;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    white-space: pre-line;
+}
+
+.modal_container_user_email {
+    color: #333333;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.modal_container {
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 16px;
+    padding: 84px 0 80px 0;
+    width: 364px;
+}
+
+#user_email {
+    font-size: 16px;
+    line-height: 24px;
+    color: #4F4F4F;
+    border: none;
+    outline: none;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #4F4F4F;
+}
+
+.email_error_text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #EB5757;
+    margin-top: 8px;
+    display: none;
+}
+
+.email_error_text_active {
+    display: block;
+}
+
+#modal_container_button {
+    margin-top: 68px;
+}
+
+
+.modal_icon_letter {
+    height: 32px;
+    width: 32px;
+    display: block;
+    margin: 0 auto 44px;
+}
+
+.modal_container_cross_button{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.modal_icon_cross {
+    color: #4F4F4F;
+    height: 16px;
+    width: 16px;
+}
+
+.modal_container_success_text {
+    white-space: pre-line;
+    color: #2F80ED;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.modal_icon_tick {
+    display: block;
+    margin: 60px auto 0;
+}
+
+.modal_container_height {
+    padding: 220px 0;
+}
