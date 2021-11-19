@@ -59,12 +59,14 @@ formElement.addEventListener("submit", submitClicked);
 
 const closeButtons = document.querySelectorAll(".modal_container_cross_button");
 const emailErrorTextEl = document.querySelector(".email_error_text");
+const userEmailInput = document.querySelector("#user_email");
 
 closeButtons.forEach(function (closeButton) {
     closeButton.addEventListener("click", function () {
         emailModal.classList.remove("modal_active");
         successModal.classList.remove("modal_active");
         emailErrorTextEl.classList.remove("email_error_text_active");
+        userEmailInput.classList.remove("user_email_error");
     });
 });
 
@@ -73,9 +75,9 @@ const modalEmailContainer = document.querySelector("#modal_email_container");
 
 modalEmailContainer.addEventListener("submit", function (ev) {
     ev.preventDefault();
-    const userEmailInput = document.querySelector("#user_email");
     if (!userEmailInput.value) {
         emailErrorTextEl.classList.add("email_error_text_active");
+        userEmailInput.classList.add("user_email_error");
         return;
     }
     emailModal.classList.remove("modal_active");
