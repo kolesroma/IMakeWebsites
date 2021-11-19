@@ -351,6 +351,7 @@ div.activity_type_container label {
 }
 
 #user_email {
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 24px;
     color: #4F4F4F;
@@ -358,6 +359,15 @@ div.activity_type_container label {
     outline: none;
     padding-bottom: 12px;
     border-bottom: 1px solid #4F4F4F;
+}
+
+.user_email_error {
+    color: #EB5757;
+    border-bottom-color: #EB5757;
+}
+
+.user_email_error::placeholder {
+    color: #EB5757;
 }
 
 .email_error_text {
